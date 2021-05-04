@@ -5,7 +5,7 @@ import { useAppContext } from "../context/state";
 import DetailsButton from "./Button";
 
 function Cards() {
-  const { state, setState } = useAppContext();
+  const { state } = useAppContext();
   const [loading] = useState(false);
   const { users } = state;
   return (
@@ -16,7 +16,6 @@ function Cards() {
         <div>
           <ul className="card-grid">
             {users.map((user) => {
-              const userId = user.id;
               return (
                 <li key={user.id} className="card">
                   <Card className="cards" bg="light">

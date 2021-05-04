@@ -7,9 +7,7 @@ import { useAppContext } from "../context/state";
 import { getUserById } from "../lib/utils";
 import Button from "react-bootstrap/Button";
 import {
-  BrowserRouter as Router,
   Link,
-  Redirect,
   useParams,
 } from "react-router-dom";
 
