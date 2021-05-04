@@ -10,7 +10,7 @@ function DetailsButton(props) {
       className="details-button"
       to={`/users/${props.user}`}
     >
-      <Button variant="primary">More Details</Button>
+      <Button variant="primary" className="details-button">More Details</Button>
     </Link>
   );
 }
